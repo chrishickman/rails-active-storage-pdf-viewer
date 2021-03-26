@@ -1,0 +1,7 @@
+<h1>Active Storage PDF Viewer</h1>
+
+<% @announcements.each do |a| %>
+    <p><%= link_to a.title, page_show_url(id: a.id) %></p>
+<% end %>
+<hr />
+<%= link_to "Add Announcement", new_announcement_url %>
